@@ -3,19 +3,19 @@
 *, *:before, *:after{
   box-sizing: border-box;
   padding: 0; margin: 0;
-  font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font: 300 1em/1.5 $helvetica;
   text-decoration: none;
-  color: #111;
+  color: $almost-black;
 }
 
-html, body{background: rgb(236, 240, 241);}
+html, body{background: $light-grey;}
 
   section.container{
     min-width: 500px;
     margin: 10% auto;
     text-align: center;
   }
-    a:hover{border-bottom: 1px solid #111;} 
+    a:hover{border-bottom: 1px solid $almost-black;} 
     h1{font-size: 2em; padding: 20px 0;}
     p{
       font-size: .75em;
@@ -28,7 +28,7 @@ html, body{background: rgb(236, 240, 241);}
     button {
       background: transparent; outline: none;
       position: relative;
-      border: 2px solid #111;
+      border: 2px solid $almost-black;
       padding: 15px 50px;
       overflow: hidden;
     }
