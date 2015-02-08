@@ -1,0 +1,34 @@
+$bgcolor: #69D2E7;
+html, body {
+   background: $bgcolor; 
+   font-family: 'amatic-sc', sans-serif;
+}
+
+.content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   font-size: 4em;
+   cursor: pointer;
+   text-transform: uppercase;
+   padding-bottom: 20px;
+   border-bottom: 1px solid darken($bgcolor, 15%);
+  
+    .line {
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: white;
+      top: 84px;
+      left: 0;
+      display: block;
+      transition: width 1s ease;
+      z-index: 10;
+    }
+  
+    &:hover .line {
+     width: 100%; 
+  }
+}
